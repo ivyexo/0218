@@ -3,6 +3,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { useState } from "react";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -69,24 +70,24 @@ export default function RootLayout({
 
               {/* Desktop menu */}
               <div className='hidden sm:ml-6 sm:flex sm:space-x-8'>
-                <a
+                <Link
                   href='/'
                   className='inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-transparent hover:border-gray-300 transition-colors duration-200'
                 >
                   Home
-                </a>
-                <a
+                </Link>
+                <Link
                   href='/about'
                   className='inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 transition-colors duration-200'
                 >
                   About
-                </a>
-                <a
+                </Link>
+                <Link
                   href='/contact'
                   className='inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 transition-colors duration-200'
                 >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -117,24 +118,24 @@ export default function RootLayout({
               </button>
 
               <div className='pt-20 pb-3 px-4 space-y-1'>
-                <a
+                <Link
                   href='/'
                   className='block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 rounded-md'
                 >
                   Home
-                </a>
-                <a
+                </Link>
+                <Link
                   href='/about'
                   className='block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 rounded-md'
                 >
                   About
-                </a>
-                <a
+                </Link>
+                <Link
                   href='/contact'
                   className='block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900 rounded-md'
                 >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>
